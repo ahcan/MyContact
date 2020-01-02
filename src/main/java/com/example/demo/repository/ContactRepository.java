@@ -7,5 +7,6 @@ import java.util.List;
 
 @Repository
 public interface ContactRepository extends CrudRepository<Contact, Integer> {
-	List<Contact> findByNameContactning(String term);
+	List<Contact> findByName(String name);
+	
 }
