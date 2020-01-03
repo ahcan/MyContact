@@ -25,7 +25,7 @@ public class ContactServiceImpl implements ContactService {
 	@Override
 	public List<Contact> search(String term) {
 		// TODO Auto-generated method stub
-		return contactRepository.findByName(term);
+		return contactRepository.findByNameContaining(term);
 	}
 
 	@Override
